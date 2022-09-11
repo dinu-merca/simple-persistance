@@ -13,5 +13,11 @@ public class SimplePersistence {
 	public void addRawTimeDataRow(RawTimeDataRow rawTimeDataRow) {
 		rawTimeData.add(rawTimeDataRow);
 	}
+	
+	public void printRawData() {
+		for (RawTimeDataRow rawTimeDataRow: rawTimeData) {
+			System.out.println(rawTimeDataRow.toSeparatedString("||"));
+		}
+	}
 
 }
